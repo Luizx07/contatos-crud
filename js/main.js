@@ -39,6 +39,7 @@ function cancelar(){
     document.querySelector('main').className = 'card-show'
 }
 function salvar(){
+    
     const contato = {
         "nome": document.getElementById('nome').value,
         "celular": document.getElementById('celular').value,
@@ -54,10 +55,11 @@ function salvar(){
         cancelar()
     }
 }
+
 carregarCards()
 
 document.getElementById('nome_contato')
-        .addEventListener('keydown', carregarPesquisa)
+.addEventListener('keydown', carregarPesquisa)
 
 document.getElementById('novo_contato')
 .addEventListener('click', novoContato)

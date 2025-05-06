@@ -48,13 +48,16 @@ header input{
 }
 .container {
     padding-top: 32px;
-    display: flex;
+    display: none;
     gap: 32px;
     flex-wrap: wrap;
 }
 
-main .card-on .container{
+main.card-show .container {
     display: flex;
+}
+main.card-show form {
+    display: none;
 }
 
 .card-contato{
@@ -78,12 +81,16 @@ form{
     width: 80%;
     margin: auto;
     padding: 32px;
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    display: none;
 }
 
-main .form-show .form{
+main.form-show .container {
+    display: none;
+}
+main.form-show form {
     display: flex;
 }
 
@@ -125,5 +132,8 @@ main .form-show .form{
     padding-left: 10px;
 }
 .button-container{
-    
+    display: flex;
+    width: 100%;
+    padding-left: 24.2%;
+    gap: 10;
 }
